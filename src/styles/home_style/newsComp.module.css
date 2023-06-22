@@ -97,6 +97,7 @@
 @media screen and (max-width: 480px) {
   .section {
     height: 140vh;
+    width: 100%;
   }
   .container {
     width: 100%;

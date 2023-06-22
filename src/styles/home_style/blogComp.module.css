@@ -83,6 +83,7 @@
 @media screen and (max-width: 480px) {
   .section {
     height: 160vh;
+    width: 100%;
   }
   .item_title:nth-child(3) {
     display: none;

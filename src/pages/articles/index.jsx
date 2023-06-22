@@ -23,7 +23,7 @@ export default function Index({ data }) {
       <section className={styles.section}>
         <Headers
           title={"Ülkeler ve Şehirler Hakkındaki Makalelere Gözat!"}
-          bgImgUrl={"/articlesPageBg.png"}
+          bgImgUrl={"/articlesPagebg.png"}
         />
         <div className={styles.container}>
           <div className={styles.cards}>

@@ -24,7 +24,7 @@ export default function NewsDetails({ data }) {
 
 export const getStaticPaths = async () => {
   const response = await fetch(
-    `${url}api/news?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
+    `${url}/api/news?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const news = await response.json();
 
@@ -42,7 +42,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const response = await fetch(
-    `${url}api/news/${context.params.id}?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
+    `${url}/api/news/${context.params.id}?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const data = await response.json();
 

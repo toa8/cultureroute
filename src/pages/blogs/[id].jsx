@@ -24,7 +24,7 @@ export default function BlogDetails({ data }) {
 
 export const getStaticPaths = async () => {
   const response = await fetch(
-    `${url}api/blogs?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
+    `${url}/api/blogs?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const blogs = await response.json();
 
@@ -42,7 +42,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const response = await fetch(
-    `${url}api/blogs/${context.params.id}?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
+    `${url}/api/blogs/${context.params.id}?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const data = await response.json();
 

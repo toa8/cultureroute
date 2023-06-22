@@ -36,12 +36,12 @@ export default function Home({ articles, news }) {
 
 export const getStaticProps = async () => {
   const getArticles = await fetch(
-    `${url}api/articles?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
+    `${url}/api/articles?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const articles = await getArticles.json();
 
   const getNews = await fetch(
-    `${url}api/news?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
+    `${url}/api/news?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const news = await getNews.json();
 

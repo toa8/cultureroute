@@ -62,7 +62,7 @@ export default function Index({ data }) {
 
 export const getServerSideProps = async () => {
   const response = await fetch(
-    `${url}api/blogs?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
+    `${url}/api/blogs?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );
   const data = await response.json();
 

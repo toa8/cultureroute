@@ -8,9 +8,9 @@ import Link from "next/link";
 export default function Card({ data, pageName }) {
   return (
     <>
-      {data.map((d) => {
+      {data.map((d, idx) => {
         return (
-          <>
+          <div key={idx}>
             <div className={styles.card} data-aos="fade-up">
               <Link
                 href={`/${pageName}/${d.id.toString()}`}
@@ -34,7 +34,7 @@ export default function Card({ data, pageName }) {
                 {"Daha Fazla >>"}
               </Link>
             </div>
-          </>
+          </div>
         );
       })}
     </>

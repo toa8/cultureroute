@@ -34,7 +34,7 @@ export default function Home({ articles, news }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const getArticles = await fetch(
     `${url}/api/articles?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );

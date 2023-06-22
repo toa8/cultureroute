@@ -4,7 +4,6 @@ import Head from "next/head";
 
 // Component
 import DetailComponent from "@/components/detailPage_components/DetailComponent";
-
 import { url } from "@/environment/url";
 
 export default function BlogDetails({ data }) {
@@ -22,25 +21,7 @@ export default function BlogDetails({ data }) {
   );
 }
 
-export const getStaticPaths = async () => {
-  const response = await fetch(
-    `${url}/api/blogs?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
-  );
-  const blogs = await response.json();
-
-  const paths = blogs.map((item) => {
-    return {
-      params: { id: item.id.toString() },
-    };
-  });
-
-  return {
-    paths,
-    fallback: true,
-  };
-};
-
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const response = await fetch(
     `${url}/api/blogs/${context.params.id}?apiKey=${process.env.NEXT_PUBLIC_API_KEY}`
   );

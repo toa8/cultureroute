@@ -1,0 +1,23 @@
+.btn {
+  margin-top: 1.2rem;
+  border: 1px solid rgba(240, 242, 245, 0.8);
+  background: transparent;
+  padding: 1rem 1.5rem;
+  color: rgba(240, 242, 245, 0.8);
+  cursor: pointer;
+  transition: 0.5s ease all;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  user-select: none;
+  width: 180px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background-color: #56799c !important;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: rgb(240, 242, 245);
+}

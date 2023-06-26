@@ -11,3 +11,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 480px) {
+  .cards {
+    align-items: center;
+    justify-content: center;
+  }
+}

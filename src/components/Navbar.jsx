@@ -17,12 +17,10 @@ export default function Navbar() {
       if (window.scrollY < 120) {
         document.getElementById("nav").style.backgroundColor = "transparent";
         document.getElementById("nav").style.height = "130px";
-        document.getElementById("logo").style.width = "300px";
       } else if (window.scrollY > 120) {
         document.getElementById("nav").style.backgroundColor =
-          "rgba(20,20,20,0.7)";
+          "rgba(30,30,30,0.7)";
         document.getElementById("nav").style.height = "80px";
-        document.getElementById("logo").style.width = "250px";
       }
     });
   }, []);

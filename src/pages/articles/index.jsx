@@ -16,7 +16,7 @@ export default function Index({ data }) {
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"
-          content="Yolculuğunuzun merkezi: İlham veren makalelerle Culture Route!"
+          content="Yolculuğunuzun merkezi: İlham veren makalelerle Visit Culture!"
         />
         <meta name="keywords" content="makale,gezi,rehber,seyehat"></meta>
       </Head>

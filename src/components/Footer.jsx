@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.sign}>
-          <p>© Culture Route 2023</p>
+          <p>©Visit Culture 2023</p>
         </div>
         <div className={styles.img}></div>
       </div>

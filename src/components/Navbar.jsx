@@ -4,13 +4,26 @@ import React from "react";
 import styles from "../styles/navbar.module.css";
 // Route
 import Link from "next/link";
-
 // Router
 import { useRouter } from "next/router";
+// Icons
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function Navbar() {
+  const [visible, setVisible] = React.useState(false);
   const router = useRouter();
+  const currentRoute = router.pathname;
+  console.log(currentRoute);
   const cursor = router.pathname !== "/" ? "pointer" : "auto";
+
+  const showMenu = () => {
+    setVisible(!visible);
+  };
+
+  const closeMenu = () => {
+    setVisible(false);
+  };
 
   React.useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -46,26 +59,46 @@ export default function Navbar() {
           loading="lazy"
         />
       )}
-
-      <div className={styles.links}>
+      <div className={styles.toggle} onClick={showMenu}>
+        <RxHamburgerMenu size={24} color="white" />
+      </div>
+      <div className={`${styles.links} ${visible ? styles.active : ""}`}>
+        <div className={styles.exit} onClick={closeMenu}>
+          <AiOutlineClose size={40} color="white" />
+        </div>
         <ul>
           <li>
-            <Link href="/" className={styles.link}>
+            <Link href="/" className={styles.link} onClick={closeMenu}>
               Ana Sayfa
             </Link>
           </li>
           <li>
-            <Link href="/#articles" className={styles.link} scroll={false}>
+            <Link
+              href={currentRoute === "/" ? "#articles" : "/articles"}
+              className={styles.link}
+              scroll={false}
+              onClick={closeMenu}
+            >
               Makaleler
             </Link>
           </li>
           <li>
-            <Link href="/#blogs" className={styles.link} scroll={false}>
+            <Link
+              href={currentRoute === "/" ? "#blogs" : "/blogs"}
+              className={styles.link}
+              scroll={false}
+              onClick={closeMenu}
+            >
               Bloglar
             </Link>
           </li>
           <li>
-            <Link href="/#news" className={styles.link} scroll={false}>
+            <Link
+              href={currentRoute === "/" ? "#news" : "/news"}
+              className={styles.link}
+              scroll={false}
+              onClick={closeMenu}
+            >
               Haberler
             </Link>
           </li>

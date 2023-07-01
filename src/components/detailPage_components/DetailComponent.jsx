@@ -7,7 +7,7 @@ import Headers from "../Headers";
 
 const DetailComponent = ({ data }) => {
   return (
-    <div>
+    <>
       <Headers bgImgUrl={data.cover_img} />
       <div style={{ backgroundColor: "#f8f6f5", width: "100%" }}>
         <div className={styles.content}>
@@ -54,7 +54,7 @@ const DetailComponent = ({ data }) => {
           <p className={styles.date}>{data.date}</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

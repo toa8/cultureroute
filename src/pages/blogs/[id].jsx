@@ -14,9 +14,7 @@ export default function BlogDetails({ data }) {
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta name="description" content={data.shortDesc} />
       </Head>
-      <div>
-        <DetailComponent data={data} />
-      </div>
+      <DetailComponent data={data} />
     </>
   );
 }

@@ -1,47 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Link from "next/link";
 // Styling
 import styles from "../styles/navbar.module.css";
-// Route
-import Link from "next/link";
 // Router
 import { useRouter } from "next/router";
 // Icons
-import { RxHamburgerMenu } from "react-icons/rx";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
+import { MdOutlineArticle } from "react-icons/md";
+import { FaBloggerB } from "react-icons/fa";
+import { BsNewspaper } from "react-icons/bs";
 
 export default function Navbar() {
-  const [visible, setVisible] = React.useState(false);
   const router = useRouter();
   const currentRoute = router.pathname;
-  console.log(currentRoute);
   const cursor = router.pathname !== "/" ? "pointer" : "auto";
-
-  const showMenu = () => {
-    setVisible(!visible);
-  };
-
-  const closeMenu = () => {
-    setVisible(false);
-  };
-
-  React.useEffect(() => {
-    document.addEventListener("scroll", () => {
-      if (window.scrollY < 120) {
-        document.getElementById("nav").style.backgroundColor = "transparent";
-        document.getElementById("nav").style.height = "130px";
-      } else if (window.scrollY > 120) {
-        document.getElementById("nav").style.backgroundColor =
-          "rgba(30,30,30,0.7)";
-        document.getElementById("nav").style.height = "80px";
-      }
-    });
-  }, []);
 
   return (
     <nav className={styles.nav} id="nav">
       {cursor === "pointer" ? (
-        <Link href="/" style={{ height: "100%" }}>
+        <Link href="/">
           <img
             src="/visitculturelogo.png"
             alt="logo"
@@ -56,20 +34,14 @@ export default function Navbar() {
           alt="logo"
           className={styles.logo}
           id="logo"
-          loading="lazy"
         />
       )}
-      <div className={styles.toggle} onClick={showMenu}>
-        <RxHamburgerMenu size={24} color="white" />
-      </div>
-      <div className={`${styles.links} ${visible ? styles.active : ""}`}>
-        <div className={styles.exit} onClick={closeMenu}>
-          <AiOutlineClose size={40} color="white" />
-        </div>
+      <div className={styles.links}>
         <ul>
           <li>
-            <Link href="/" className={styles.link} onClick={closeMenu}>
-              Ana Sayfa
+            <Link href="/" className={styles.link}>
+              <AiOutlineHome color="white" className={styles.icon} />
+              <p>AnaSayfa</p>
             </Link>
           </li>
           <li>
@@ -77,9 +49,9 @@ export default function Navbar() {
               href={currentRoute === "/" ? "#articles" : "/articles"}
               className={styles.link}
               scroll={false}
-              onClick={closeMenu}
             >
-              Makaleler
+              <MdOutlineArticle color="white" className={styles.icon} />
+              <p>Makaleler</p>
             </Link>
           </li>
           <li>
@@ -87,9 +59,9 @@ export default function Navbar() {
               href={currentRoute === "/" ? "#blogs" : "/blogs"}
               className={styles.link}
               scroll={false}
-              onClick={closeMenu}
             >
-              Bloglar
+              <FaBloggerB color="white" className={styles.icon} />
+              <p>Bloglar</p>
             </Link>
           </li>
           <li>
@@ -97,9 +69,9 @@ export default function Navbar() {
               href={currentRoute === "/" ? "#news" : "/news"}
               className={styles.link}
               scroll={false}
-              onClick={closeMenu}
             >
-              Haberler
+              <BsNewspaper color="white" className={styles.icon} />
+              <p> Haberler</p>
             </Link>
           </li>
         </ul>

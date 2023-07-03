@@ -15,3 +15,9 @@
   width: 50%;
   text-align: center;
 }
+
+@media screen and (max-width: 720px) {
+  .page_header {
+    height: 90vh;
+  }
+}

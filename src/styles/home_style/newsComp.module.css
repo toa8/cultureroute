@@ -94,7 +94,7 @@
   user-select: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .section {
     height: 140vh;
     width: 100%;

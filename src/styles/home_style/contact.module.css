@@ -52,7 +52,7 @@
   right: -40px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .section {
     height: 80vh;
     width: 100%;

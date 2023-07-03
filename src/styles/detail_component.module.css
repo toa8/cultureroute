@@ -44,7 +44,7 @@
   font-size: 18px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   .content {
     width: 80%;
     display: flex;
@@ -60,10 +60,10 @@
   }
   .content_img {
     height: 50vh;
-    width: 120%;
+    width: 110%;
   }
   .imgDesc {
-    bottom: 10px;
+    bottom: 5px;
     font-size: 10px;
     text-align: center;
   }

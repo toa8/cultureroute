@@ -16,8 +16,25 @@ export default function Navbar() {
   const currentRoute = router.pathname;
   const cursor = router.pathname !== "/" ? "pointer" : "auto";
 
+  const [prevScrollPos, setPrevScrollPos] = React.useState(0);
+  const [visible, setVisible] = React.useState(true);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <nav className={styles.nav} id="nav">
+    <nav className={`${styles.nav} ${visible ? "" : styles.hidden}`} id="nav">
       {cursor === "pointer" ? (
         <Link href="/">
           <img

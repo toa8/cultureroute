@@ -21,3 +21,9 @@
   border-radius: 2px;
   color: rgb(240, 242, 245);
 }
+
+@media screen and (max-width: 720px) {
+  .btn {
+    padding: 1rem;
+  }
+}

@@ -11,7 +11,7 @@ export default function Card({ data, pageName }) {
       {data.map((d, idx) => {
         return (
           <div key={idx}>
-            <div className={styles.card} data-aos="fade-up">
+            <div className={styles.card}>
               <Link
                 href={`/${pageName}/${d.id.toString()}`}
                 style={{ textDecoration: "none" }}

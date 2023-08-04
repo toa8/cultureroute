@@ -31,7 +31,7 @@ export default function Index({ data }) {
             return (
               <div key={idx}>
                 <Link href={`/blogs/${d.id.toString()}`}>
-                  <div className={styles.card} data-aos="fade-up">
+                  <div className={styles.card}>
                     <img
                       src={d.cover_img}
                       alt={d.city}

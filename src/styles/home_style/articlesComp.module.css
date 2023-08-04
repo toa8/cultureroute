@@ -1,5 +1,5 @@
 .section {
-  min-height: 120vh;
+  min-height: 120dvh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -72,8 +72,8 @@
 
 @media screen and (max-width: 720px) {
   .section {
-    height: 240vh;
     width: 100%;
+    padding: 7rem;
   }
   .article_boxes {
     height: 80%;

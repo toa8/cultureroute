@@ -3,11 +3,17 @@ import React from "react";
 import styles from "../../styles/home_style/welcomeComp.module.css";
 // Components
 import Button from "../ui_components/Button";
+// Animations
+import { motion } from "framer-motion";
 
 export default function WelcomeComp() {
   return (
     <section className={styles.section}>
-      <div className={styles.sentences} data-aos="fade-up">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className={styles.sentences}
+      >
         <h2>Visit Culture</h2>
         <h4>
           Seyehat Noktalarını Ve Kültür Duraklarını Keşfetmek İçin Adımlarınızı
@@ -16,7 +22,7 @@ export default function WelcomeComp() {
         <div className={styles.btnContainer}>
           <Button title="Keşfetmeye Başla" href="/articles" />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -6,20 +6,30 @@ import Link from "next/link";
 import styles from "../../styles/home_style/newsComp.module.css";
 // Components
 import Button from "../ui_components/Button";
+// Animation
+import { motion } from "framer-motion";
 
 export default function NewsComp({ news }) {
   const firstOfThree = news.slice(0, 3);
 
   return (
     <section id="news" className={styles.section}>
-      <div className={styles.container} data-aos="fade-up">
-        <div className={styles.textArea}>
+      <motion.div className={styles.container}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className={styles.textArea}
+        >
           <p>Trustworthy</p>
           <p>Brand New</p>
           <p>News</p>
           <Button href={"/news"} title={"Daha Fazla Oku"} />
-        </div>
-        <div className={styles.cards}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className={styles.cards}
+        >
           {firstOfThree.map((news, idx) => {
             let shortDesc = news.shortDesc;
             return (
@@ -48,8 +58,8 @@ export default function NewsComp({ news }) {
               </div>
             );
           })}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

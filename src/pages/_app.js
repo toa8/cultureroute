@@ -1,8 +1,5 @@
 // Global Css
 import "@/styles/globals.css";
-// Smooth Scroll Animation
-import AOS from "aos";
-import "aos/dist/aos.css";
 // Layouts
 import Layout from "../Layouts/Layout";
 import { useRouter } from "next/router";
@@ -11,17 +8,6 @@ import React from "react";
 import Script from "next/script";
 
 export default function MyApp({ Component, pageProps }) {
-  React.useEffect(() => {
-    AOS.init({
-      offset: 140,
-      delay: 100,
-      duration: 500,
-      easing: "ease",
-      once: true,
-      mirror: false,
-      anchorPlacement: "top-bottom",
-    });
-  }, []);
   const router = useRouter();
 
   if (router.pathname === "/_error") {

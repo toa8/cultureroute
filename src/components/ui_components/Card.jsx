@@ -4,13 +4,19 @@ import React from "react";
 import styles from "../../styles/ui_style/cardComp.module.css";
 // Route
 import Link from "next/link";
+// Animation
+import { motion } from "framer-motion";
 
 export default function Card({ data, pageName }) {
   return (
     <>
       {data.map((d, idx) => {
         return (
-          <div key={idx}>
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          >
             <div className={styles.card}>
               <Link
                 href={`/${pageName}/${d.id.toString()}`}
@@ -34,7 +40,7 @@ export default function Card({ data, pageName }) {
                 {"Daha Fazla >>"}
               </Link>
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </>

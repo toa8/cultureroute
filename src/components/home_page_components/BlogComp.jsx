@@ -1,24 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-
 // Styling
 import styles from "../../styles/home_style/blogComp.module.css";
-
 //components
 import Button from "../ui_components/Button";
+// Animation
+import { motion } from "framer-motion";
 
 export default function BlogComp() {
   return (
     <section className={styles.section} id="blogs">
-      <div className={styles.container}>
-        <div className={styles.text_area} data-aos="fade-right">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className={styles.container}
+      >
+        <div className={styles.text_area}>
           <p className={styles.title}>BLOGLAR</p>
           <p className={styles.subtitle}>Seyahat bloglarına gözat!</p>
           <p className={styles.desc}>
             En güzel şehirler, yiyecekler, kültürler keşfedilmeyi bekliyor!
           </p>
         </div>
-        <div className={styles.item} data-aos="fade-left">
+        <div className={styles.item}>
           <div className={styles.shape}>
             <Button
               title={">"}
@@ -46,7 +50,7 @@ export default function BlogComp() {
             }
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

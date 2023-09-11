@@ -6,14 +6,20 @@ import Link from "next/link";
 import styles from "../../styles/home_style/articlesComp.module.css";
 // Components
 import Button from "../ui_components/Button";
+// Animation
+import { motion } from "framer-motion";
 
-export default function ArticlesComp({ articles }) {
+export default function ArticlesComp({ articles, isVisible }) {
   const firstOfThree = articles.slice(0, 3);
 
   return (
     <>
       <section className={styles.section} id="articles">
-        <div className={styles.article_boxes} data-aos="fade-up">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className={styles.article_boxes}
+        >
           {firstOfThree.map((article) => {
             let shortDesc = article.shortDesc;
             return (
@@ -37,7 +43,7 @@ export default function ArticlesComp({ articles }) {
               </div>
             );
           })}
-        </div>
+        </motion.div>
         <div>
           <Button
             href="/articles"

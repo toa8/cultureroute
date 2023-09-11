@@ -25,7 +25,12 @@ export default function Index({ data }) {
         <meta name="keywords" content="makale,gezi,rehber,seyehat"></meta>
       </Head>
       <section className={styles.section}>
-        <Headers title={"Bloglar"} bgImgUrl={"/blogPageBg.png"} />
+        <Headers
+          title={"Bloglar"}
+          bgImgUrl={
+            "https://images.unsplash.com/photo-1580655653885-65763b2597d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          }
+        />
         <div className={styles.container}>
           {data.map((d, idx) => {
             return (

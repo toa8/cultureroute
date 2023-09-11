@@ -23,7 +23,9 @@ export default function Index({ data }) {
       <section className={styles.section}>
         <Headers
           title={"Ülkeler ve Şehirler Hakkındaki Makalelere Gözat!"}
-          bgImgUrl={"/articlesPagebg.png"}
+          bgImgUrl={
+            "https://images.unsplash.com/photo-1525874684015-58379d421a52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          }
         />
         <div className={styles.container}>
           <div className={styles.cards}>

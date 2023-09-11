@@ -7,6 +7,8 @@ import Link from "next/link";
 import styles from "../../styles/blogs_page/blogsPage.module.css";
 // Components
 import Headers from "@/components/Headers";
+// Animation
+import { motion } from "framer-motion";
 
 import { url } from "@/environment/url";
 
@@ -34,7 +36,11 @@ export default function Index({ data }) {
         <div className={styles.container}>
           {data.map((d, idx) => {
             return (
-              <div key={idx}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                key={idx}
+              >
                 <Link href={`/blogs/${d.id.toString()}`}>
                   <div className={styles.card}>
                     <img
@@ -56,7 +62,7 @@ export default function Index({ data }) {
                     </div>
                   </div>
                 </Link>
-              </div>
+              </motion.div>
             );
           })}
         </div>

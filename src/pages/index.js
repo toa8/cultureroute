@@ -14,7 +14,7 @@ export default function Home({ articles, news }) {
   return (
     <>
       <Head>
-        <title>Visit Culture</title>
+        <title>visitculture.com</title>
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"

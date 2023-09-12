@@ -16,13 +16,13 @@ export default function Index({ data }) {
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"
-          content="Yolculuğunuzun merkezi: İlham veren makalelerle Visit Culture!"
+          content="The center of your journey: Visit Culture! with inspiring articles!"
         />
-        <meta name="keywords" content="makale,gezi,rehber,seyehat"></meta>
+        <meta name="keywords" content="article, trip, guide, travel"></meta>
       </Head>
       <section className={styles.section}>
         <Headers
-          title={"Ülkeler ve Şehirler Hakkındaki Makalelere Gözat!"}
+          title={"Browse Articles about Countries and Cities!"}
           bgImgUrl={
             "https://images.unsplash.com/photo-1525874684015-58379d421a52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
           }

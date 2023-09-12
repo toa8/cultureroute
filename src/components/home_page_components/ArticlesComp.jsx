@@ -47,7 +47,7 @@ export default function ArticlesComp({ articles, isVisible }) {
         <div>
           <Button
             href="/articles"
-            title="Daha Fazla Oku"
+            title="Read More >>"
             styleOverride={{ backgroundColor: "#474e4ee8", color: "white" }}
           />
         </div>

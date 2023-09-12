@@ -29,14 +29,16 @@ export default function Footer() {
             </a>
           </div>
           <div className={styles.links}>
-            <Link href="/articles">Makaleler</Link>
-            <Link href="/blogs">Bloglar</Link>
-            <Link href="/news">Haberler</Link>
-            <Link href="/contact">İletişime Geç</Link>
+            <Link href="/articles">Articles</Link>
+            <Link href="/blogs">Blogs</Link>
+            <Link href="/news">News</Link>
+            <Link href="/contact">Contact us</Link>
           </div>
         </div>
         <div className={styles.sign}>
           <p>©Visit Culture 2023</p>
+          <span>|</span>
+          <Link href="/privacypolicy">Privacy Policy</Link>
         </div>
         <div className={styles.img}></div>
       </div>

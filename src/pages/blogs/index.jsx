@@ -20,15 +20,13 @@ export default function Index({ data }) {
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"
-          content="BLOGLAR,
-          Seyahat bloglarına gözat!
-          En güzel şehirler, yiyecekler, kültürler keşfedilmeyi bekliyor!"
+          content="BLOGS, Check out travel blogs! The most beautiful cities, foods and cultures are waiting to be discovere"
         />
-        <meta name="keywords" content="makale,gezi,rehber,seyehat"></meta>
+        <meta name="keywords" content="article, trip, guide, travel"></meta>
       </Head>
       <section className={styles.section}>
         <Headers
-          title={"Bloglar"}
+          title={"Blogs"}
           bgImgUrl={
             "https://images.unsplash.com/photo-1580655653885-65763b2597d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
           }

@@ -37,7 +37,7 @@ export default function Card({ data, pageName }) {
                 className={styles.btn}
                 href={`/${pageName}/${d.id.toString()}`}
               >
-                {"Daha Fazla >>"}
+                {"Read More >>"}
               </Link>
             </div>
           </motion.div>

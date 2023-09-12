@@ -15,12 +15,12 @@ export default function Contact() {
       />
       <div className={styles.main}>
         <div className={styles.content}>
-          <p className={styles.title}>Bizimle İletişime Geç</p>
+          <p className={styles.title}>Contact Us</p>
           <p className={styles.subtitle}>
-            Websitesi hakkında düşünceleriniz ve önerileriniz bizler için çok
-            önemli. Düşüncelerinizi{" "}
+            Your thoughts and suggestions about the website are very important
+            to us.{" "}
             <Link className={styles.link} href={"/contact"}>
-              iletin.
+              Let us know what you think.
             </Link>
           </p>
         </div>

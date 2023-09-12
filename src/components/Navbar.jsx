@@ -58,7 +58,7 @@ export default function Navbar() {
           <li>
             <Link href="/" className={styles.link}>
               <AiOutlineHome color="white" className={styles.icon} />
-              <p>AnaSayfa</p>
+              <p>Home</p>
             </Link>
           </li>
           <li>
@@ -68,7 +68,7 @@ export default function Navbar() {
               scroll={false}
             >
               <MdOutlineArticle color="white" className={styles.icon} />
-              <p>Makaleler</p>
+              <p>Articles</p>
             </Link>
           </li>
           <li>
@@ -78,7 +78,7 @@ export default function Navbar() {
               scroll={false}
             >
               <FaBloggerB color="white" className={styles.icon} />
-              <p>Bloglar</p>
+              <p>Blogs</p>
             </Link>
           </li>
           <li>
@@ -88,7 +88,7 @@ export default function Navbar() {
               scroll={false}
             >
               <BsNewspaper color="white" className={styles.icon} />
-              <p> Haberler</p>
+              <p>News</p>
             </Link>
           </li>
         </ul>

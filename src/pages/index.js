@@ -18,11 +18,11 @@ export default function Home({ articles, news }) {
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"
-          content="Kültürel yolculuklara eşlik eden ilham verici rehberiniz!"
+          content="Your inspiring guide to accompany cultural journeys!"
         />
         <meta
           name="keywords"
-          content="travel,seyehat,gezi,ülkeler,tatil,makale,haber,kültür"
+          content="travel,travel,trip,countries,vacation,article,news,culture"
         ></meta>
       </Head>
       <WelcomeComp />

@@ -16,10 +16,11 @@ export default function BlogComp() {
         className={styles.container}
       >
         <div className={styles.text_area}>
-          <p className={styles.title}>BLOGLAR</p>
-          <p className={styles.subtitle}>Seyahat bloglarına gözat!</p>
+          <p className={styles.title}>BLOGS</p>
+          <p className={styles.subtitle}>Check out travel blogs!</p>
           <p className={styles.desc}>
-            En güzel şehirler, yiyecekler, kültürler keşfedilmeyi bekliyor!
+            The most beautiful cities, foods and cultures are waiting to be
+            discovered!
           </p>
         </div>
         <div className={styles.item}>
@@ -41,12 +42,12 @@ export default function BlogComp() {
           </div>
           <p className={styles.item_title}>
             {
-              "'Seyahat etmek, sınırları zihinlerimizdeki duvarları yıkmak için en etkili araçtır.' - Ralph Waldo Emerson"
+              "'Traveling is the most effective means of breaking down the walls of our minds, the boundaries.' - Ralph Waldo Emerson"
             }
           </p>
           <p className={styles.item_title}>
             {
-              "'Seyahat, ruhun gıdasıdır; beslenmek için sürekli yeni yerler keşfetmelisiniz.' - Pat Conroy"
+              "'Travel is food for the soul; you must constantly explore new places to be nourished.' - Pat Conroy"
             }
           </p>
         </div>

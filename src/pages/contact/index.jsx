@@ -59,13 +59,13 @@ export default function Index() {
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"
-          content="Websitesi hakkında düşünceleriniz ve önerileriniz bizler için çok önemli. Düşüncelerinizi iletin."
+          content="Your thoughts and suggestions about the website are very important to us. Let us know what you think."
         />
-        <meta name="keywords" content="makale,gezi,rehber,seyehat"></meta>
+        <meta name="keywords" content="article, trip, guide, travel"></meta>
       </Head>
       <section className={styles.section}>
         <Headers
-          title={"İletişime Geç! ☎"}
+          title={"Contact Us"}
           bgImgUrl={
             "https://images.unsplash.com/photo-1485770958101-9dd7e4ea6d93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
           }
@@ -80,7 +80,7 @@ export default function Index() {
             <input
               type="text"
               name="name"
-              placeholder="Adınız ve Soyadınız"
+              placeholder="Name and Surname"
               className={styles.input}
               maxLength={50}
               required
@@ -99,7 +99,7 @@ export default function Index() {
             />
             <textarea
               name="body"
-              placeholder="İçerik"
+              placeholder="Content"
               className={`${styles.textarea} ${styles.input}`}
               maxLength={400}
               required
@@ -112,7 +112,7 @@ export default function Index() {
               onClick={handleSubmit}
               disabled={isButtonDisabled}
             >
-              Gönder
+              Send
             </button>
           </form>
         </div>

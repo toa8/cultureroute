@@ -23,7 +23,7 @@ export default function NewsComp({ news }) {
           <p>Trustworthy</p>
           <p>Brand New</p>
           <p>News</p>
-          <Button href={"/news"} title={"Daha Fazla Oku"} />
+          <Button href={"/news"} title={"Read More >>"} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}

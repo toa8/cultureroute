@@ -16,11 +16,11 @@ export default function WelcomeComp() {
       >
         <h2>Visit Culture</h2>
         <h4>
-          Seyehat Noktalarını Ve Kültür Duraklarını Keşfetmek İçin Adımlarınızı
-          Bizimle Atın! Adım Adım Kültür Rotanızı Oluşturun.
+          Steps to Explore Travel Destinations and Culture Stops Take it with
+          us! Create Your Culture Route Step by Step.
         </h4>
         <div className={styles.btnContainer}>
-          <Button title="Keşfetmeye Başla" href="/articles" />
+          <Button title="Start Exploring" href="/articles" />
         </div>
       </motion.div>
     </section>

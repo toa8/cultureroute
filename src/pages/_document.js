@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <script
           async
-          src={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE}
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADSENSE}`}
           crossorigin="anonymous"
         ></script>
       </Head>

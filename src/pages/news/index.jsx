@@ -12,7 +12,7 @@ export default function Index({ data }) {
   return (
     <>
       <Head>
-        <title>Haberler | Visit Culture</title>
+        <title>News | Visit Culture</title>
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"

@@ -59,7 +59,7 @@ const index = () => {
           can use our site completely free of charge.{" "}
         </p>
         <h2>About Images</h2>
-        <p>Most of the images are free ones from unsplash.com.</p>
+        <p>Most of the images are free ones from unsplash.com and pexels.com</p>
         <p>
           The rest of the images and visual phrases were found on google.com.
         </p>

@@ -12,7 +12,7 @@ export default function Index({ data }) {
   return (
     <>
       <Head>
-        <title>Makaleler | Visit Culture</title>
+        <title>Articles | Visit Culture</title>
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"

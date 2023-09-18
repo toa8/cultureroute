@@ -16,7 +16,7 @@ export default function Index({ data }) {
   return (
     <>
       <Head>
-        <title>Blog Yazıları | Visit Culture</title>
+        <title>Blogs | Visit Culture</title>
         <link rel="icon" href="/visitcultureicon.jpeg" />
         <meta
           name="description"

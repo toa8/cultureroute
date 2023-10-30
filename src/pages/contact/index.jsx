@@ -26,9 +26,9 @@ export default function Index() {
       });
 
       if (response.ok) {
-        alert("Mail başarıyla gönderildi!");
+        alert("Your mail send successfully!");
       } else {
-        alert("Mail gönderilemedi!");
+        alert("Mail cannot send!");
       }
     } catch (err) {
       console.error(err);

@@ -18,8 +18,8 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.img:hover {
-  transform: scale(1.02);
+.card:hover .img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
 }
 
 .title {

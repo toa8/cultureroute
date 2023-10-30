@@ -41,8 +41,7 @@
 }
 
 .card:hover {
-  box-shadow: 10px 10px 10px rgba(240, 242, 245, 0.1);
-  transform: rotate(1deg);
+  transform: scale(1.01);
 }
 
 .content {

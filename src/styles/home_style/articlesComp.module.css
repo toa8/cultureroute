@@ -6,9 +6,6 @@
   justify-content: center;
   flex-direction: column;
   gap: 4rem;
-  background-image: url("/articlesCompBg.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .article_boxes {

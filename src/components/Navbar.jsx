@@ -10,6 +10,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineArticle } from "react-icons/md";
 import { FaBloggerB } from "react-icons/fa";
 import { BsNewspaper } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 export default function Navbar() {
   const router = useRouter();
@@ -89,6 +90,16 @@ export default function Navbar() {
             >
               <BsNewspaper color="white" className={styles.icon} />
               <p>News</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={currentRoute === "/" ? "#contact" : "/contact"}
+              className={styles.link}
+              scroll={false}
+            >
+              <HiOutlineMail color="white" className={styles.icon} />
+              <p>Contact</p>
             </Link>
           </li>
         </ul>

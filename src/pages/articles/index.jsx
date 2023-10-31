@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 // Styling
-import styles from "../../styles/articles_detail_page.module.css";
+import styles from "../../styles/pageCards.module.css";
 // Components
 import Card from "@/components/ui_components/Card";
 import Headers from "@/components/Headers";

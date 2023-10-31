@@ -65,6 +65,7 @@ export default function Contact() {
               type="email"
               onChange={handleChange}
               className={styles.input}
+              maxLength={70}
               placeholder="Enter your email address to receive updates on new articles."
             />
             <button type="submit" className={styles.btn} onClick={handleSubmit}>
